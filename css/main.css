@@ -1,7 +1,53 @@
+/* GENERAL RULES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TYPOGRAPHY */
+.u-text--monospace {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.u-text--openSans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.u-text--gotu {
+    font-family: 'Gotu', sans-serif;
+}
+
+.u-color--grey {
+    color: #f1f1f1;
+}
+
+.u-color--green {
+    color: rgb(17, 54, 2);
+}
+
+/* UTILITIES */
 .show {
     opacity: 1;
 }
-
+/* 
 .hidden {
     opacity: 0;
+} */
+
+/* CONTENT */
+/* Form */
+.wrapper {
+    height: 100vh;
+    padding-top: 100px;
+    background: rgb(160, 20, 20);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.customerForm {
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    padding: 24px;
 }

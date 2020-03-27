@@ -4,50 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Gotu|Open+Sans:400,700|Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     
-    <div class="wrapper">
-        <h1 class="title">Calcola il prezzo del tuo biglietto</h1>
+    <div class="wrapper u-text--openSans u-color--grey">
 
-        <div class="dati-input">
-            <div class="row">
-                <div class="col">
-                    <label for="nome">Nome e Cognome</label>
-                    <input id="nome" type="text" 
-                           name="nome"
-                            placeholder="inserisci il tuo nome"
-                    >
+        <!-- Form -->
+        <div class="customerForm">
+            <h1 class="title u-text--gotu">Calcola il prezzo del tuo biglietto</h1>
+        
+            <!-- Inputs -->
+            <div class="dati-input">
+                <div class="row">
+                    <div class="col">
+                        <label for="nome">Nome e Cognome</label>
+                        <input id="nome" type="text" name="nome" placeholder="inserisci il tuo nome">
+                    </div>
+                    <div class="col">
+                        <label for="km">Km da percorrere</label>
+                        <input id="km" type="number" min="1" max="300" name="km" placeholder="inserisci i Km">
+                    </div>
+                    <div class="col">
+                        <label for="fascia-eta">Fascia d'età</label>
+                        <select name="fascia-eta" id="fascia-eta">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="over65">Over 65</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col">
-                    <label for="km">Km da percorrere</label>
-                    <input id="km" type="number" min="1" max="300"
-                           name="km"
-                            placeholder="inserisci i Km"
-                    >
+                <div class="row">
+                    <button class="btn" id="bottoneGenera">Genera</button>
+                    <button class="btn" id="bottoneAnnulla">Annulla</button>
                 </div>
-                <div class="col">
-                    <label for="fascia-eta">Fascia d'età</label>
-                    <select name="fascia-eta" id="fascia-eta">
-                        <option value="minorenne">Minorenne</option>
-                        <option value="maggiorenne">Maggiorenne</option>
-                        <option value="over65">Over 65</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="row">
-                <button class="btn" id="bottoneGenera">Genera</button>
-                <button class="btn" id="bottoneAnnulla">Annulla</button>
             </div>
         </div>
-
+        
+        <!-- Ticket -->
         <section id="biglietto" class="hidden">
             <h2 class="title">Il tuo biglietto</h2>
-
             <h3>Dettagli passeggeri</h3>
-
             <div class="contenuti">
                 <div class="nome">
                     <h2>Nome Passeggero</h2>
@@ -83,6 +81,7 @@
                 </div>
             </div>
         </section>
+
     </div>
 
     <!-- JS -->
