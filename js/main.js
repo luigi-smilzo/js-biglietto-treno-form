@@ -69,6 +69,11 @@ bottoneAnnulla.addEventListener('click', function() {
         var nome = document.getElementById('nome').value = '';
         var kmDaPercorrere = document.getElementById('km').value = '';
         var fasciaEta = document.getElementById('fascia-eta').value = 'minorenne';
+        document.getElementById('nome-passeggero').innerHTML = '';
+        document.getElementById('offerta-applicata').innerHTML = 0;
+        document.getElementById('carrozza').innerHTML = 0;
+        document.getElementById('codice-cp').innerHTML = 0;
+        document.getElementById('costo').innerHTML = 0;
         container.className = 'hidden';
     }
 );
