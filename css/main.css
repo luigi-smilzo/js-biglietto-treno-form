@@ -194,3 +194,11 @@ h1 {
     margin-bottom: 10px;
 }
 
+#thankYou {
+    margin-top: 24px;
+}
+
+.delayedFadeIn {
+    transition: opacity .5s linear 1s;
+}
+

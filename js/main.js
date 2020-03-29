@@ -8,6 +8,7 @@
 var container = document.getElementById('biglietto');
 var bottoneGenera = document.getElementById('bottoneGenera');
 var bottoneAnnulla = document.getElementById('bottoneAnnulla');
+var thankYou = document.getElementById('thankYou');
 
 
 /**
@@ -61,6 +62,7 @@ bottoneGenera.addEventListener('click',
 
         // Mostra biglietto
         container.className = 'show u-slideInFromRight transition';
+        thankYou.className = 'u-text--gotu show delayedFadeIn';
     }   
 );
 
@@ -75,5 +77,6 @@ bottoneAnnulla.addEventListener('click', function() {
         document.getElementById('codice-cp').innerHTML = 0;
         document.getElementById('costo').innerHTML = 0;
         container.className = 'hidden';
+        thankYou.className = 'u-text--gotu hidden';
     }
 );
